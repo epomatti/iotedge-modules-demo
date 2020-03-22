@@ -44,6 +44,12 @@ sudo iotedge check
 
 If you run error `417 -- The device's deployment configuration is not set` don't worry, check [this issue](https://github.com/MicrosoftDocs/azure-docs/issues/50665).
 
+## Modules
+
+To create modules on top of this infrastructure, check [modules](modules) directory.
+
+- EdgeModule - A simple custom module
+
 
 ## Admin commands
 
