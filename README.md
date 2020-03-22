@@ -48,7 +48,8 @@ If you run error `417 -- The device's deployment configuration is not set` don't
 
 To create modules on top of this infrastructure, check [modules](modules) directory.
 
-- EdgeModule - A simple custom module
+- EdgeModule - A simple module
+- EdgeModuleCSharp - A custom code module
 
 
 ## Admin commands
