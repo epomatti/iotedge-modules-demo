@@ -1,6 +1,6 @@
-const config = require('./config/config.js');
+const iot = require('./config/iot.js');
 
-var registry = config.getIoTRegistry();
+var registry = iot.getRegistry();
 
 var devices = [];
 
