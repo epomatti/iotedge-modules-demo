@@ -5,11 +5,11 @@ const getConnectionString = function () {
     return process.env.IOTHUB_CONNECTION_STRING;
 }
 
-const getIoTRegistry = function () {
+const getRegistry = function () {
     var connectionString = getConnectionString();
     return iothub.Registry.fromConnectionString(connectionString);
 }
 
 module.exports = {
-    getIoTRegistry
+    getRegistry
 }
