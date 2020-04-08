@@ -1,8 +1,6 @@
-require('dotenv').config()
-var iothub = require('azure-iothub');
+const config = require('./config/config.js');
 
-var connectionString = process.env.IOTHUB_CONNECTION_STRING;
-var registry = iothub.Registry.fromConnectionString(connectionString);
+var registry = config.getIoTRegistry();
 
 var devices = [];
 
