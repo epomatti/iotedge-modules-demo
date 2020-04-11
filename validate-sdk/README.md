@@ -6,13 +6,13 @@ Sample scripts to test various operations using IoT Hub SDK.
 
 Create configuration file and fill up the required values:
 
-```s
+```sh
 cp example.env .env
 ```
 
 Download dependencies:
 
-```s
+```sh
 npm i
 ```
 
