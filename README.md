@@ -6,7 +6,7 @@ Delivery of code to remote devices using Azure IoT Edge.
 
 Create the infraestructure:
 
-```s
+```sh
 # Setup
 az extension add --name azure-iot
 az group create --name edge --location eastus2
