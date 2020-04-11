@@ -15,3 +15,7 @@ Download dependencies:
 ```s
 npm i
 ```
+
+### Command reference
+
+SDK commands may be checked on [Node.js Service SDK](https://docs.microsoft.com/en-us/javascript/api/azure-iothub/?view=azure-node-latest) documentation.

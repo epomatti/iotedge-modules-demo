@@ -12,15 +12,12 @@ device = {
     }
 }
 
-async function listDevices() {
-    await registry.delete(deviceId).then(response => {
-        console.log(response);
-    });
+async function createDevice() {
     await registry.create(device).then(response => {
         console.log(response);
     });
 }
 
 (async () => {
-    await listDevices();
+    await createDevice();
 })()
