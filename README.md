@@ -56,13 +56,13 @@ To create modules on top of this infrastructure, check [modules](modules) direct
 
 Turning off your VM to avoid costs:
 
-```s
+```sh
 az vm deallocate -g edge -n EdgeVM
 ```
 
 Deleting the resource group:
 
-```s
+```sh
 az group delete -n edge
 ```
 
