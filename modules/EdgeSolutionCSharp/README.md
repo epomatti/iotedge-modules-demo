@@ -6,7 +6,7 @@ You'll need the infrasctrutcure build from the root of this repository.
 
 Running it:
 
-```s
+```sh
 # Within VS Code terminal
 docker login -u <ACR username> -p <ACR password> <ACR login server>
 ```
