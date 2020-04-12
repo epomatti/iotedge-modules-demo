@@ -13,6 +13,14 @@ async function listDevices() {
     console.log(devices);
 }
 
+async function listOneDevice() {
+    await registry.get('myEdgeDevice').then((response) => {
+        console.log(JSON.stringify(response.responseBody, null, '  '));    
+    })
+    console.log(devices);
+}
+
 (async () => {
     await listDevices();
+    await listOneDevice();
 })()

@@ -1,0 +1,63 @@
+{
+    "id": "testing-sdk-565465465",
+    "labels": {},
+    "priority": 1,
+    "targetCondition": "*",
+    "content": {
+        "modulesContent": {
+            "$edgeAgent": {
+                "properties.desired": {
+                    "modules": {},
+                    "runtime": {
+                        "settings": {
+                            "minDockerVersion": "v1.25",
+                            "registryCredentials": {}
+                        },
+                        "type": "docker"
+                    },
+                    "schemaVersion": "1.0",
+                    "systemModules": {
+                        "edgeAgent": {
+                            "settings": {
+                                "image": "mcr.microsoft.com/azureiotedge-agent:1.0",
+                                "createOptions": ""
+                            },
+                            "type": "docker"
+                        },
+                        "edgeHub": {
+                            "settings": {
+                                "image": "mcr.microsoft.com/azureiotedge-hub:1.0",
+                                "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"8883/tcp\":[{\"HostPort\":\"8883\"}],\"5671/tcp\":[{\"HostPort\":\"5671\"}],\"443/tcp\":[{\"HostPort\":\"443\"}]}}}"
+                            },
+                            "type": "docker",
+                            "status": "running",
+                            "restartPolicy": "always"
+                        }
+                    }
+                }
+            },
+            "$edgeHub": {
+                "properties.desired": {
+                    "routes": {},
+                    "schemaVersion": "1.0",
+                    "storeAndForwardConfiguration": {
+                        "timeToLiveSecs": 7200
+                    }
+                }
+            },
+            "SimulatedTemperatureSensor": {
+                "properties.desired": {
+                    "SendData": true,
+                    "SendInterval": 5
+                }
+            }
+        }
+    },
+    "metrics": {
+        "queries": {
+            "basicSucessMetric": "SELECT deviceId FROM devices WHERE properties.reported.lastDesiredStatus.code = 200"
+        },
+        "results": {}
+    },
+    "etag": "*"
+}
