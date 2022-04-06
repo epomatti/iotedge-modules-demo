@@ -2,6 +2,8 @@
 
 Delivery of code to remote devices using Azure IoT Edge.
 
+<img src=".docs/IoT-Edge.svg" width=50>
+
 ## Getting started
 
 Create the infraestructure:
